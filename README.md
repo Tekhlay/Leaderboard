@@ -124,7 +124,8 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
--[x] A web browser like Google Chrome or Firefox. -[x] A code editor like Visual Studio Code with Git and Node.js
+- [x] A web browser like Google Chrome or Firefox.
+- [x] A code editor like Visual Studio Code with Git and Node.js
 
 In order to run this project you need:
 
@@ -140,6 +141,11 @@ Example command:
 
 Clone this repository to your desired folder:
 
+```sh
+  cd my-folder
+  https://github.com/Tekhlay/Leaderboard.git
+```
+
 <!--
 Example commands:
 
@@ -152,6 +158,13 @@ Example commands:
 ### Install
 
 Install this project with:
+
+```sh
+  mkdir leaderboard
+  cd leaderboard
+  npm install
+  npm run build
+```
 
 <!--
 Example command:
@@ -168,6 +181,10 @@ Example command:
 
 To run the project, execute the following command:
 
+```sh
+  npm run startt
+```
+
 <!--
 Example command:
 
@@ -180,6 +197,10 @@ Example command:
 
 To run tests, run the following command:
 
+```sh
+  jest test
+```
+
 <!--
 Example command:
 
@@ -190,13 +211,13 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using:Github pages
 
 <!--
 Example:
 
 ```sh
-Github pages
+
 ```
  -->
 
