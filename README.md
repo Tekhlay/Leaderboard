@@ -30,8 +30,6 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -60,11 +58,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> This is a simple website project for the Leaderboard list app. Which alow users to see list of their scores.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,21 +71,24 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="#">HTMl</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">Promise and Callback</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="#">Crome/web browser</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="#">Leaderboard API</a></li>
   </ul>
 </details>
 
@@ -99,9 +98,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[ADD Leader Name]**
+- **[Add Leader Score]**
+- **[See Recent Scores]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +110,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,6 +123,9 @@ After you're finished please remove all the comments and instructions!
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
+
+- [x] A web browser like Google Chrome or Firefox.
+- [x] A code editor like Visual Studio Code with Git and Node.js
 
 In order to run this project you need:
 
@@ -139,12 +141,17 @@ Example command:
 
 Clone this repository to your desired folder:
 
+```sh
+  cd my-folder
+  https://github.com/Tekhlay/Leaderboard.git
+```
+
 <!--
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  https://github.com/Tekhlay/Leaderboard.git
 ```
 --->
 
@@ -152,12 +159,21 @@ Example commands:
 
 Install this project with:
 
+```sh
+  mkdir leaderboard
+  cd leaderboard
+  npm install
+  npm run build
+```
+
 <!--
 Example command:
 
 ```sh
-  cd my-project
-  gem install
+  mkdir leaderboard
+  cd leaderboard
+  npm install
+  npm run build
 ```
 --->
 
@@ -165,11 +181,15 @@ Example command:
 
 To run the project, execute the following command:
 
+```sh
+  npm run startt
+```
+
 <!--
 Example command:
 
 ```sh
-  rails server
+  npm run startt
 ```
 --->
 
@@ -177,17 +197,21 @@ Example command:
 
 To run tests, run the following command:
 
+```sh
+  jest test
+```
+
 <!--
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  jest test
 ```
 --->
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using:Github pages
 
 <!--
 Example:
@@ -205,17 +229,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Teklay**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Tekhlay](https://github.com/Tekhlay)
+- Twitter: [@TeklayB](https://twitter.com/TekhlayB12)
+- LinkedIn: [Teklay](https://linkedin.com/in/Teklay)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +243,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Add more styling]**
+- [ ] **[send and receive data from API]**
+- [ ] **[final touches]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,7 +265,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project just hit a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,7 +275,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank for Microverse online school.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,11 +285,11 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[How to install it?]**
 
-  - [Answer_1]
+  - [What are the requirement needed?]
 
-- **[Question_2]**
+- **[Is your site is platform dependent?]**
 
   - [Answer_2]
 
