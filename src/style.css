@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: white;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  gap: 100px;
+}
+
+.recentscores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.score-header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.list-score {
+  width: 60%;
+  border: 2px solid rgb(39, 39, 39);
+}
+
+tr {
+  width: 100%;
+}
+
+.form-score {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btnform {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.addbtn,
+.btn-refresh {
+  width: 60px;
+  height: 30px;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px rgb(62, 61, 61);
+}
