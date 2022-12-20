@@ -30,8 +30,6 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -60,9 +58,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This is a simple website project for the Leaderboard list app. Which alow users to see list of their scores.
 
 **[your_project__name]** is a...
 
