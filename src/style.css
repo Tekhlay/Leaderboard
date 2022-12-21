@@ -40,7 +40,8 @@
   border: 2px solid rgb(39, 39, 39);
 }
 
-tr,td {
+tr,
+td {
   padding: 10px;
 }
 
@@ -53,10 +54,10 @@ tr,td {
 
 #user,
 #score {
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
 }
 
 .btnform {
@@ -73,10 +74,8 @@ tr,td {
   box-shadow: 2px 2px 2px rgb(62, 61, 61);
 }
 
-@media (max-width:480px) {
-    main {
-        width: 30%;
-
-    }
-    
+@media (max-width: 480px) {
+  main {
+    width: 30%;
+  }
 }
