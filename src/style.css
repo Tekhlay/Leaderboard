@@ -6,6 +6,7 @@
 .main {
   background-color: white;
 }
+
 .main h1 {
   text-align: center;
   color: blueviolet;
@@ -92,6 +93,7 @@ td {
   main {
     width: 100%;
   }
+
   .container {
     width: 40%;
     gap: 10px;

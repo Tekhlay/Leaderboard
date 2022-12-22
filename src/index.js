@@ -1,4 +1,3 @@
-import { indexOf } from 'lodash';
 import './style.css';
 
 let data = {};
@@ -16,7 +15,7 @@ const erroMsgs = () => {
   const escore = document.createElement('strong');
   escore.className = 'escore';
   errors.style.color = 'red';
-  escore.innerHTML = ' Score is reqired!';
+  escore.innerHTML = 'Score is reqired!';
   errors.appendChild(escore);
   setTimeout(() => {
     document.querySelector('.escore').remove();
@@ -26,7 +25,7 @@ const erroMsgu = () => {
   const span = document.createElement('strong');
   span.className = 'errorus';
   erroru.style.color = 'red';
-  span.innerHTML = 'Name is reqired!';
+  span.textContent = 'Name is reqired!';
   erroru.appendChild(span);
   setTimeout(() => {
     document.querySelector('.errorus').remove();
