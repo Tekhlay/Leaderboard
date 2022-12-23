@@ -15,16 +15,23 @@
                     <h2>Recent scores</h2>
                     <button class="btn-refresh">Refresh</button>
                 </div>
-                <table class="list-score">
-                </table>
+                <div class="playerlist">
+                    <div class="playertitle">
+                        <p>User</p>
+                        <p>Score</p>
+                    </div>
+                    <table class="list-score">
+                    </table>
+                </div>
+               
             </div>
             <form action="#" class="form-score">
                 <h2>Add your score</h2>
                 <p class="success"></p>
                 <input type="text" name="" id="user" placeholder="Your name">
-                <span class="erroruser"></span>
+                <strong class="namerequired"></strong>
                 <input type="text" name="" id="score" placeholder="Your score">
-                <span class="errorscore"></span>
+                <strong class="scorerequired"></strong>
                 <div class="btnform">
                     <input class="addbtn" type="button" value="Submit">
                 </div>
