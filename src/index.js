@@ -2,44 +2,42 @@ import './style.css';
 
 let data = {};
 const id = 'dLQGiu9bKl2Xwh0Docr4';
-// const froms = document.querySelector('.form-score');
+const froms = document.querySelector('.form-score');
 const allscore = document.querySelector('.list-score');
 const refresh = document.querySelector('.btn-refresh');
 const addscore = document.querySelector('.addbtn');
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`;
 
-const errors = document.querySelector('.errorscore');
-const erroru = document.querySelector('.erroruser');
-const sucess = document.querySelector('.success');
-const erroMsgs = () => {
-  const escore = document.createElement('strong');
-  escore.className = 'escore';
-  errors.style.color = 'red';
-  escore.innerHTML = 'Score is reqired!';
-  errors.appendChild(escore);
+const errorMsgName = () => {
+  const userrequired = document.querySelector('.namerequired');
+  userrequired.textContent = 'Name is required!';
+  userrequired.style.color = 'red';
+  userrequired.style.display = 'block';
   setTimeout(() => {
-    document.querySelector('.escore').remove();
+    userrequired.style.display = 'none';
   }, 2000);
 };
-const erroMsgu = () => {
-  const span = document.createElement('strong');
-  span.className = 'errorus';
-  erroru.style.color = 'red';
-  span.textContent = 'Name is reqired!';
-  erroru.appendChild(span);
+
+const errorMsgScore = () => {
+  const scorerequired = document.querySelector('.scorerequired');
+  scorerequired.style.color = 'red';
+  scorerequired.textContent = 'Score is Required';
+  scorerequired.style.display = 'block';
   setTimeout(() => {
-    document.querySelector('.errorus').remove();
+    scorerequired.style.display = 'none';
   }, 2000);
 };
-const Sucess = () => {
-  const s = document.createElement('p');
-  s.className = 'sucessmsg';
-  sucess.style.display = 'block';
-  s.textContent = 'Data Added sucessfully!';
-  sucess.style.color = 'white';
-  sucess.appendChild(s);
+
+const MsgSucess = () => {
+  const success = document.querySelector('.success');
+  success.style.display = 'block';
+  success.style.background = 'brown';
+  success.style.borderRadius = '70px';
+  success.style.textAlign = 'center';
+  success.textContent = 'Data Added sucessfully!';
+  success.style.color = 'white';
   setTimeout(() => {
-    document.querySelector('.sucessmsg').remove();
+    success.style.display = 'none';
   }, 2000);
 };
 
@@ -50,8 +48,8 @@ const fetchData = async () => {
   gamedata.result.forEach((element) => {
     allscore.innerHTML += `<tr id="${gamedata.result.indexOf(element)}"><td>${element.user}</td><td>${element.score}</td></tr>`;
     if (gamedata.result.indexOf(element) % 2 === 0) {
-      const c = document.getElementById(`${gamedata.result.indexOf(element)}`);
-      c.style.background = 'grey';
+      const contentbg = document.getElementById(`${gamedata.result.indexOf(element)}`);
+      contentbg.style.background = 'grey';
     }
   });
 };
@@ -71,23 +69,22 @@ refresh.addEventListener('click', (element) => {
   fetchData();
 });
 
+const username = document.querySelector('#user');
+const scoregame = document.querySelector('#score');
 addscore.addEventListener('click', (e) => {
-  const usern = document.querySelector('#user');
-  const scoreg = document.querySelector('#score');
   e.preventDefault();
-  if (!usern.value) {
-    erroMsgu();
-  } else if (!scoreg.value) {
-    erroMsgs();
+  if (!username.value) {
+    errorMsgName();
+  } else if (!scoregame.value) {
+    errorMsgScore();
   } else {
-    const data1 = {
-      user: usern.value,
-      score: scoreg.value,
+    const datastore = {
+      user: username.value,
+      score: scoregame.value,
     };
-    data = data1;
+    data = datastore;
     sendData();
-    usern.value = '';
-    scoreg.value = '';
-    Sucess();
+    MsgSucess();
+    froms.reset();
   }
 });
